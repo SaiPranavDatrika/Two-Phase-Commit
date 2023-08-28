@@ -15,3 +15,5 @@ If a slave responds with a “NOT READY” message or does not respond at all, t
 Once the transaction coordinator has received the “READY” message from all the slaves, it sends a “COMMIT” message to all of them, which ​contains the details of the transaction that needs to be stored in the databases.
 Each slave applies the transaction and returns a “DONE” acknowledgment message back to the coordinator.
 The coordinator considers the entire transaction to be completed once it receives​ a “DONE” message from all the slaves.
+
+I have written this code in TLA+, which is designed by Leslie Lamport.
