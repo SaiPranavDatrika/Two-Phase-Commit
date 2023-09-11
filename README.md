@@ -16,4 +16,4 @@ Once the transaction coordinator has received the “READY” message from all t
 Each slave applies the transaction and returns a “DONE” acknowledgment message back to the coordinator.
 The coordinator considers the entire transaction to be completed once it receives​ a “DONE” message from all the slaves.
 
-**I have written this code in TLA+, which is designed by Leslie Lamport.**
+**I have written this code in TLA+, which was designed by Leslie Lamport.**
